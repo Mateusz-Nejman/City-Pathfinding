@@ -7,18 +7,18 @@ Example program require MonoGame, but the algorithm(in folder CPF) is writting i
 # Using
 1. Add .cs files from **CPF** folder to your project.
 2. Instantiate ***Map***
-```
+```csharp
 Map map = new Map();
 ```
 3. Add points and neighbour relations
-```
+```csharp
 map.AddPoint(x,y); //Create Point called "P_x_y"
 
 map.AddNeighbour(name1, name2); //Create neighbour relation between name1 and name2 point
 //Find script can only move from point to his neighbour
 ```
 4. Find path
-```
+```csharp
 map.Find(startPoint, endPoint); //Return List<string> contains list of path points
 ```
 
